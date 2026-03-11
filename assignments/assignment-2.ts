@@ -39,7 +39,7 @@
 
     
     customerEligibleForLoan=isCustomerEligibleForLoan();
-    console.log("Customer is Elligible to Take Loan "+ customerEligibleForLoan);
+   // console.log("Customer is Elligible to Take Loan "+ customerEligibleForLoan);
     
     //chechking the loan Eligibility Function
     function isCustomerEligibleForLoan(): boolean{
