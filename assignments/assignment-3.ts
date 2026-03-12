@@ -16,21 +16,19 @@ let studentNames:string[]=["Suresh","Mahesh","Naresh"];
 let studentMarks:number[]=[75,80, 82] ;
 let studentUpdatedMarks:number[]=[];
 
+let averageMark :number=0;
+
 console.log("Student Marks");
 console.log(studentMarks);
 
 console.log("Updated Marks");
+
 for(let i:number = 0; i< studentMarks.length ; i++)
 {
     studentUpdatedMarks[i]= studentMarks[i]+10;
-    console.log(studentNames[i]+ ":"+ studentUpdatedMarks[i])
+    averageMark+=studentUpdatedMarks[i];
+    console.log(`${studentNames[i]} : ${studentUpdatedMarks[i]}`);
 
 }
 
-let averageMark :number=0;
-
-for (let eachMark of studentUpdatedMarks)
-{
-    averageMark= averageMark + eachMark;
-}
-console.log("AverageMarks : " + averageMark/studentMarks.length);
+console.log(`AverageMarks : ${averageMark/studentMarks.length}`);

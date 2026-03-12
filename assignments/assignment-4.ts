@@ -29,14 +29,14 @@ let noOfSuspiciousTransaction: number=0;
 
 for(let transaction of transactions)
 {
-    balanceAmount= balanceAmount+transaction;
+    balanceAmount += transaction;
     if(transaction>0)
     {
-        totalAmtCredited= totalAmtCredited+transaction;
+        totalAmtCredited += transaction;
     }
     else
     {
-        totalAmtDebited=totalAmtDebited+transaction;
+        totalAmtDebited += transaction;
     }
     if(transaction>=10000 || transaction<=-10000)
     {
