@@ -13,7 +13,7 @@ checkPrimeNumber(1);
 function checkPrimeNumber(numberToCheck: number): void {
     let isPrime: boolean = true;
     let i: number = 2;
-    if (numberToCheck >= 1) {
+    if (numberToCheck > 1) {
         while (numberToCheck > i) {
 
             if (numberToCheck % i == 0) {
@@ -23,6 +23,10 @@ function checkPrimeNumber(numberToCheck: number): void {
         }
 
         isPrime == true ? console.log(`Given number ${numberToCheck} IS A PRIME: ` + isPrime) : console.log(`Given number ${numberToCheck} is NOT A PRIME: ` + isPrime);
+    }
+    else if (numberToCheck == 1) {
+        isPrime=false;
+        console.log(`Given number ${numberToCheck} is neither prime nor composite : ${isPrime}`);
     }
     else {
         console.log(`Given number ${numberToCheck} is not a positive number`);
