@@ -5,10 +5,11 @@
 number greater than 1 that has no positive divisors other than 1 and itself. */
 
 //input number to check for prime
-
 checkPrimeNumber(7);
 checkPrimeNumber(25);
 checkPrimeNumber(1);
+
+
 
 function checkPrimeNumber(numberToCheck: number): void {
     let isPrime: boolean = true;
@@ -18,6 +19,7 @@ function checkPrimeNumber(numberToCheck: number): void {
 
             if (numberToCheck % i == 0) {
                 isPrime = false;
+                break;
             }
             i++;
         }
