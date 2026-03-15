@@ -57,3 +57,4 @@ function hikePercentofEachEmployee(empName:string,baseSalary:number,experience:n
 //Employee datas
 console.log("EmployeeNames with their hike percentage");
 console.log(employeeData);
+

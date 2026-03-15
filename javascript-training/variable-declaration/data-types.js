@@ -48,11 +48,41 @@ let age;
 console.log(age);
 
 //5. null ==> Null represents a variable that has been declared and assigned a null or empty value. 
-let salary = 100000;
-salary = NaN;
+let salary = null;
+//salary = NaN;
 console.log(salary);
 
 //6. Symbol ==> Symbol represents a unique hidden identifier. 
+
+let price = Symbol('price');
+//price=1000;
+
+//let countryOfOrigin= Symbol();
+
+let productInfo = {
+    productName : "One Plus 17",
+    countryOfOrigin : Symbol(),
+    rate:price,
+}
+
+console.log(price); 
+console.log(productInfo);
+
+
+/* const person1 = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue",
+  [Symbol('id')]:123456
+};
+
+let id = Symbol('id');
+console.log(id);
+person1[id] = 140353;
+console.log(person1[id]); */
+
+//console.log(person1);
 
 
 /********************************************/
@@ -89,6 +119,11 @@ console.log(person.address.ZipCode);
 console.log(person["name"]);
 console.log(person.address["city"]); 
 
-console.log(person);
+console.log(person.address["city"]);
 
-//2. array ==>
+//2. array ==> Array data type represents a collection of values within the square brackets.
+let arr = [10,20,30,40,50];
+console.log(arr[0]);
+console.log(arr[3]);
+
+    
