@@ -49,7 +49,7 @@ console.log("Total number of occurrences :" + count);
 
 
 //Write a program to print * in  left handed triangle pattern
-let noOfRows = 5;
+let noOfRows = 3;
 console.log("Left Handed Triangle Pattern:");
 for (let i: number = 0; i < noOfRows; i++) {
     let pattern: string = "";
@@ -63,3 +63,23 @@ for (let i: number = 0; i < noOfRows; i++) {
     console.log(pattern);
 
 }
+
+console.log("Pyramid Pattern:");
+
+let noOfRows1 =5;
+for(let i: number=1; i<= noOfRows1;i++)
+{
+    let pattern:string="";
+    for(let k=noOfRows1;k>i;k--)
+    {
+         pattern+=" ";
+    }
+
+    for(let j=1;j<=2*i-1;j++)
+    {
+        pattern+="*";
+    }
+    console.log(pattern);
+  
+}
+
