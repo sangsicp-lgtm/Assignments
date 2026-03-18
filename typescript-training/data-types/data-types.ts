@@ -10,3 +10,14 @@ console.log(empName);
 console.log( location);
 console.log( company);
 let empAddress :string|number|boolean="21 Toweer";
+
+console.log("***");
+let empInfo: (string | number | boolean)[] = [9553220022, "Bharath Reddy",  "hyderabad","chennai",true];
+
+empInfo.forEach(info => {
+    console.log(info.toString().toUpperCase().replace(/REDDY/, "reddi"));
+});
+/* mpInfo.push("Bangalore");
+console.log(empInfo); */
+empInfo.pop();
+console.log(empInfo);
