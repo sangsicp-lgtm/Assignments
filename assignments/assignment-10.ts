@@ -1,37 +1,30 @@
-//Best Time to Buy and Sell Stock
-
-
+ let prices: number[] = [1,6,18, 5, 3, 6, 7];
 //let prices: number[] = [7, 6, 4, 3, 1];
+let maxxProfit: number = 0;
+let curProfit:number=0;
+let buyDay:number=0;
+let sellDay:number=0;
 
-let prices: number[] = [7, 1, 5, 3, 6, 4];
-console.log("Prices of the stock are:", prices);
+for (let i = 0; i < prices.length - 1; i++) {
+    for (let j = i+1; j < prices.length; j++) {
 
-let buyStock = prices[0];
-let sellStock: number = 0;
-let profit: number = 0;
-
-function maxProfit(prices: number[]): number {
-    if (prices[prices.length - 1] <= 1) {
-        return profit;
-    }
-    else {
+       
+        curProfit=prices[j]-prices[i];
         
-        for (let i: number = 0; i < prices.length - 1; i++) {
-
-            if (prices[i] < buyStock) {
-                buyStock = prices[i];
-            }
+        if(curProfit>maxxProfit)
+        {
+            maxxProfit=curProfit;
+            buyDay=i+1;
+            sellDay=j+1;
         }
-     
-        for (let i: number = 0; i < prices.length - 1; i++) {
 
-            if (prices[i] > buyStock) {
-                sellStock = prices[i];
-            }
-        }
-        return profit=sellStock-buyStock;
-  
     }
-   
 }
-console.log("Profit made on this Stock is:", maxProfit(prices));
+if(maxxProfit>0)
+{
+    console.log("BuyDay is: "+ buyDay,"SellDay is: "+sellDay); 
+    console.log("Profit made on this Stock is:", maxxProfit); 
+}
+else{
+        console.log("There is no Profit made on this Stock :", maxxProfit); 
+}

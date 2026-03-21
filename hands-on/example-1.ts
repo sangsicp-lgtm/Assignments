@@ -1,6 +1,8 @@
+
+
 let input: string = "Joined the conversation";
 
-let words:string[]=input.split(" ");
+let words:string[] = input.split(" ");
 console.log("Original words: ", words);
 
 words.forEach((word, index) => {
