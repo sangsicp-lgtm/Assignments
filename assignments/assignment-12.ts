@@ -22,6 +22,7 @@ function myPow(x: number, y: number): number {
     }
     else    
     {
+        
         while(y>0)
         {
            
@@ -40,5 +41,6 @@ function myPow(x: number, y: number): number {
 console.log("2 to the power of 10 :"+myPow(2,10))
 console.log("2 to the power of 3 :"+myPow(2.1,3))
 console.log("2 to the power of -2 :"+myPow(2,-2))
+console.log("10 to the power of -2 :"+myPow(10,-1))
 /* console.log("2 to the power of 0 :"+myPow(2,0))
 console.log("2 to the power of 1 :"+myPow(2,1)) */
